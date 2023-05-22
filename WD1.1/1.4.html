@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title id="pageTitle">Моя веб-страница</title>
+</head>
+<body>
+ <h1>Когда была создана эта веб-страница?<br>Проверьте заголовок страницы для ответа</h1>
+ 
+ <script>
+  // Получаем текущую дату
+  var currentDate = new Date();
+  
+  // Получаем элемент заголовка страницы
+  var pageTitle = document.getElementById("pageTitle");
+  
+  // Устанавливаем заголовок страницы на текущую дату
+  pageTitle.innerText = currentDate.toLocaleDateString();
+ </script>
+</body>
+</html>

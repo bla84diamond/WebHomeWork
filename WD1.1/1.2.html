@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Моя веб-страница</title>
+</head>
+<body>
+ <h1>Числа от 1 до 10:</h1>
+ 
+ <ul id="numbers"></ul>
+ 
+ <script>
+  // Получаем элемент списка, куда будем выводить числа
+  var list = document.getElementById("numbers");
+  
+  // Выводим числа от 1 до 10
+  for (var i = 1; i <= 10; i++) {
+   // Создаем новый элемент списка
+   var listItem = document.createElement("li");
+   
+   // Задаем текст элементу списка
+   listItem.innerText = i;
+   
+   // Добавляем элемент в список
+   list.appendChild(listItem);
+  }
+ </script>
+</body>
+</html>

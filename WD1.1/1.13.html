@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>1.13</title>
+</head>
+<body>
+ <p id="squares-list"></p>
+
+ <script>
+  var squaresList = document.getElementById("squares-list");
+
+  for (var i = 1; i <= 20; i++) {
+   var square = i * i;
+   var listItem = document.createElement("p");
+   listItem.textContent = i + "\u00B2 = " + square;
+   squaresList.appendChild(listItem);
+  }
+ </script>
+</body>
+</html>

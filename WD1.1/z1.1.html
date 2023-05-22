@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Опрос</title>
+ <style>
+  form {
+   max-width: 500px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #f2f2f2;
+   border-radius: 5px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  h1 {
+   text-align: center;
+   margin-top: 0;
+  }
+  label {
+   display: block;
+   margin-bottom: 10px;
+   font-weight: bold;
+  }
+  input[type="text"], input[type="email"], select, textarea {
+   width: 100%;
+   padding: 10px;
+   border-radius: 5px;
+   border: none;
+   margin-bottom: 20px;
+   box-sizing: border-box;
+  }
+  input[type="radio"], input[type="checkbox"] {
+   margin-right: 10px;
+  }
+  input[type="submit"] {
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: bold;
+  }
+  input[type="submit"]:hover {
+   background-color: #3e8e41;
+  }
+ </style>
+</head>
+<body>
+ <form>
+  <h1>Опрос</h1>
+  <p>Пожалуйста, заполните форму ниже, чтобы принять участие в нашем опросе.</p>
+  <label for="name">Имя:</label>
+  <input type="text" id="name" name="name" required>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <label for="age">Возраст:</label>
+  <input type="number" id="age" name="age" min="18" max="120" required>
+  <label for="gender">Пол:</label>
+  <select id="gender" name="gender" required>
+   <option value="">Выберите пол</option>
+   <option value="male">Мужской</option>
+   <option value="female">Женский</option>
+  </select>
+  <label for="feedback">Ваше мнение:</label>
+  <textarea id="feedback" name="feedback" required></textarea>
+  <br>
+  <label>Как вы узнали о нашем опросе?</label>
+  <input type="radio" id="social-media" name="source" value="social-media" required>Социальные сети</br>
+  <input type="radio" id="friends" name="source" value="friends">От друзей</br>
+  <input type="radio" id="other" name="source" value="other">Другое</br>
+  <br>
+  <label>Какие темы вас больше всего интересуют?</label>
+  <input type="checkbox" id="technology" name="interests[]" value="technology">Технологии</br>
+  <input type="checkbox" id="sports" name="interests[]" value="sports">Спорт</br>
+  <input type="checkbox" id="politics" name="interests[]" value="politics">Политика</br>
+  <input type="checkbox" id="entertainment" name="interests[]" value="entertainment">Развлечения</br>
+  <br>
+  <input type="submit" value="Отправить">
+ </form>
+</body>
+</html>

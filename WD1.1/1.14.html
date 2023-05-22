@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>1.14</title>
+</head>
+<body>
+ <h1>Неалфавитный список</h1>
+ <p id="non-alphabetical-list"></p>
+
+ <h1>Алфавитный список</h1>
+ <p id="alphabetical-list"></p>
+
+ <script>
+  // Неалфавитный список
+  var nonAlphabeticalList = document.getElementById("non-alphabetical-list");
+  var names = ["Саша", "Анна", "Петр", "Ольга", "Артем", "Наталья", "Иван", "Елена", "Сергей", "Мария"];
+  for (var i = 0; i < names.length; i++) {
+   var listItem = document.createElement("p");
+   listItem.textContent = names[i] + " " + (i + 1);
+   nonAlphabeticalList.appendChild(listItem);
+  }
+
+  // Алфавитный список
+  var alphabeticalList = document.getElementById("alphabetical-list");
+  names.sort();
+  for (var i = 0; i < names.length; i++) {
+   var listItem = document.createElement("p");
+   listItem.textContent = names[i] + " " + (i + 1);
+   alphabeticalList.appendChild(listItem);
+  }
+ </script>
+</body>
+</html>
