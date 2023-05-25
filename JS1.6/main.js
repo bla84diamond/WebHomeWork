@@ -7,7 +7,6 @@ alert( message );
 
 showMessage(); // Привет, я JavaScript!
 
-alert( message ); // 
 // 2.	 Напишите функцию JavaScript, которая проверяет, является ли переданная строка палиндромом или нет (код из прошлой практической работы)?
 
 function isPalindrome(str) {
@@ -36,9 +35,9 @@ function replaceNegatives(arr) {
   return arr;
 }
 
-const myArray = [1, 2, -3, -4, 5, -6, 7, 8, 9, 10, -11];
+const myArray = [3, 1, -5, -2, 6, -7, 4, 2, 8, 11, -14];
 const newArray = replaceNegatives(myArray);
-console.log(newArray); // [1, 2, 9, 16, 5, 36, 7, 8, 9, 10, 121]
+console.log(newArray);
 
 
 // 4.	Создайте класс, который будет сохранять в переменную имя пользователя и выводить его на экран. Используйте его.
@@ -53,8 +52,8 @@ class User {
   }
 }
 
-const user = new User('John');
-user.sayName(); // Выведет "Привет, меня зовут John" в консоль.
+const user = new User('Петя');
+user.sayName();
  
 // 6.	Создайте класс, который переворачивает ваше имя.
 
@@ -69,5 +68,5 @@ class NameReverser {
 }
 
 // Пример использования класса:
-const myName = new NameReverser('Andrew');
+const myName = new NameReverser('Дмитрий');
 console.log(myName.reverse());

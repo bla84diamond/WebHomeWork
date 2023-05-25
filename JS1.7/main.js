@@ -4,6 +4,12 @@ const add = (a, b) => a + b;
 const subtract = (a, b) => a - b;
 const multiply = (a, b) => a * b;
 const divide = (a, b) => a / b;
+a = 4;
+b = 2;
+console.log(add (a, b));
+console.log(subtract (a, b));
+console.log(multiply (a, b));
+console.log(divide (a, b));
 
 // 2.	Используя  Function Expression реализуйте проверку условий тестовых заданий.
 
@@ -18,6 +24,9 @@ const isPositive = function(value) {
 const isEven = function(value) {
   return value % 2 === 0;
 }
+console.log(isNumber (3));
+console.log(isPositive (-1));
+console.log(isEven (4));
 
 // 3.	Реализуйте в виде стрелочной функции функцию, проверяющую вашу фамилию на полиндром.
 
@@ -25,6 +34,7 @@ const isPalindrome = (string) => {
   const reversedString = string.split('').reverse().join('');
   return string === reversedString;
 }
+console.log(isPalindrome ('аникина'));
 
 // 4.	Реализуйте в виде стрелочной функции вычисление среднего значения данных в массиве
 
@@ -32,6 +42,9 @@ const calculateAverage = (array) => {
   const sum = array.reduce((accumulator, currentValue) => accumulator + currentValue);
   return sum / array.length;
 }
+myArray = [3, 1, -5, -2, 6, -7, 4, 2, 8, 11, -14];
+
+console.log(calculateAverage (myArray));
 
 // 5.	В виде стрелочной функции реализуйте функцию, вычисляющую количество дней до нового года.
 
@@ -43,32 +56,35 @@ const daysUntilNewYear = () => {
   return daysUntil;
 }
 
+console.log(daysUntilNewYear());
+
 // 6.	Создайте пустую стрелочную функцию возвращает undefined
 
 const emptyFunc = () => {
   return undefined;
 }
+console.log(emptyFunc());
 
 // 7.	Создайте массив и напишите стрелочные функции для него: суммирование всех элементов, выявить все четные, умножить каждый элемент на 2. 
 
-const numbers = [2, 4, 6, 8];
+const numbers = [1, 2, 3, 4, 5, 6];
 
-// Суммирование всех элементов массива
-const sumArray = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log(sum); // 21
 
-// Выявление всех четных элементов массива
-const evenArray = numbers.filter((number) => number % 2 === 0);
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // [2, 4, 6]
 
-// Умножение каждого элемента массива на 2
-const doubledArray = numbers.map((number) => number * 2);
+const doubledNumbers = numbers.map(num => num * 2);
+console.log(doubledNumbers); // [2, 4, 6, 8, 10, 12]
 
 // 8.	Создайте массив с e-mail. Организуйте фильтр на странице html по названию почты.
 
 const emails = [
-  "john@example.com",
-  "mary@example.com",
-  "jane@example.com",
-  "mike@example.com"
+  "dima@example.com",
+  "nata@example.com",
+  "masha@example.com",
+  "glasha@example.com"
 ];
 
 function filterEmails() {

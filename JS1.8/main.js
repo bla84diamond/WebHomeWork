@@ -1,25 +1,25 @@
 // Решение задачи без использования функций высшего порядка
-const arr1 = [1, 2, 3];
+const arr1 = [3, 6, 9];
 const arr2 = [];
 for(let i = 0; i < arr1.length; i++) {
   arr2.push(arr1[i] * 2);
 }
-// выводит [ 2, 4, 6 ]
+
 console.log(arr2);
 // Решение задачи с помощью функции высшего порядка map
-const arr10 = [1, 2, 3];
+const arr10 = [9, 8, 7];
 const arr20 = arr1.map(function(item) {
   return item * 2;
 });
 console.log(arr2);
 // Объём этого кода можно даже сократить, если воспользоваться стрелочной функцией:
-const arr11 = [1, 2, 3];
+const arr11 = [9, 8, 7];
 const arr22 = arr1.map(item => item * 2);
 console.log(arr2);
 // Воспользовавшись методом map(), создайте новый массив из имеющегося, который содержит увеличенные элементы на 10 и в три раза.
-const arr = [1, 2, 3];
+const arr = [9, 8, 7];
 const arr01 = arr1.map(item => item * 10 * 3); // создаем новый массив, где каждый элемент arr1, увеличенный на 10 и умноженный на 3
-console.log(arr01); // выводит [ 30, 60, 90 ]
+console.log(arr01);
 
 // 2.	Имеется массив «год рождения». Необходимо вывести их возраст.
 
@@ -29,45 +29,42 @@ function calculateAge(birthYears) {
   return ages;
 }
 
-const birthYears = [1990, 2000, 1985, 1978];
+const birthYears = [1984, 1985, 2011, 2012];
 const ages = calculateAge(birthYears);
 console.log(ages);
-// Результат: [31, 21, 36, 43]
-
 
 // 3.	Предположим, у нас имеется массив, содержащий объекты, в свойствах которых хранятся сведения об имени и возрасте представителей некой группы людей. Нам надо создать массив, в котором будут сведения только о совершеннолетних представителях этой группы (тех, чей возраст достиг 18 лет).
 // Решение задачи без использования функций высшего порядка
 const persons1 = [
-  { name: 'Peter', age: 16 },
-  { name: 'Mark', age: 18 },
-  { name: 'John', age: 27 },
-  { name: 'Jane', age: 14 },
-  { name: 'Tony', age: 24},
+  { name: 'Вася', age: 16 },
+  { name: 'Петя', age: 18 },
+  { name: 'Маша', age: 27 },
+  { name: 'Наташа', age: 14 },
+  { name: 'Лена', age: 24},
 ];
 const fullAge1 = [];
-for(let i = 0; i < persons.length; i++) {
-  if(persons[i].age >= 18) {
-    fullAge.push(persons[i]);
+for(let i = 0; i < persons1.length; i++) {
+  if(persons1[i].age >= 18) {
+    fullAge1.push(persons1[i]);
   }
 }
-console.log(fullAge);
+console.log(fullAge1);
 // Решение задачи с помощью функции высшего порядка filter
 const persons = [
-  { name: 'Peter', age: 16 },
-  { name: 'Mark', age: 18 },
-  { name: 'John', age: 27 },
-  { name: 'Jane', age: 14 },
-  { name: 'Tony', age: 24},
+  { name: 'Вася', age: 16 },
+  { name: 'Петя', age: 18 },
+  { name: 'Маша', age: 27 },
+  { name: 'Наташа', age: 14 },
+  { name: 'Лена', age: 24},
 ];
 const fullAge = persons.filter(person => person.age >= 18);
 console.log(fullAge);
-// Используя данный пример, реализуйте проверку по условию на право редактирования сайта и вывод имени админа.
 
 const users = [
-  { name: 'John', isAdmin: true },
-  { name: 'Jane', isAdmin: false },
-  { name: 'Mark', isAdmin: true },
-  { name: 'Lisa', isAdmin: false }
+  { name: 'Вася', isAdmin: true },
+  { name: 'Петя', isAdmin: false },
+  { name: 'Маша', isAdmin: true },
+  { name: 'Лена', isAdmin: false }
 ];
 const editingAllowed = users.some(user => user.isAdmin);
 if(editingAllowed) {
