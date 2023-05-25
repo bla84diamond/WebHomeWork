@@ -1,0 +1,52 @@
+1.	За что отвечает класс navbar-expand-lg?
+
+Класс `navbar-expand-lg` в Bootstrap отвечает за определение условий, при которых навигационное меню (navbar) должно изменять свое поведение и внешний вид для устройств с разными размерами экранов.
+
+Класс `navbar-expand-lg` указывает, что навигационное меню должно быть расширено на устройствах, ширина экрана которых больше или равна `992px` (т.е. на устройствах с широким экраном, таких как ноутбуки и настольные компьютеры). Если экран устройства меньше `992px`, то меню будет свернуто и будет доступно для открытия при нажатии на кнопку-гамбургер.
+
+Классы `navbar-expand-sm`, `navbar-expand-md` и `navbar-expand-xl` выполняют аналогичную функцию, но для устройств с другими размерами экранов. Например, `navbar-expand-sm` указывает, что навигационное меню должно быть расширено на устройствах с шириной экрана больше или равной `576px`. 
+
+Таким образом, класс `navbar-expand-lg` позволяет создавать адаптивные навигационные меню, которые будут корректно отображаться на различных устройствах и экранах.
+
+2.	Как добавлять разделители во вложенное меню?
+
+Для добавления разделителей во вложенное меню в Bootstrap необходимо использовать класс `dropdown-divider`. Этот класс применяется к `<div>` элементу, который будет служить разделителем.
+
+Пример кода для создания вложенного меню с разделителями:
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Мой сайт</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">О нас</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Продукты
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Категория 1</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Категория 2</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Категория 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+В данном примере создается навигационное меню с вложенным меню "Продукты". Для добавления разделителей между категориями используется элемент `<div>` с классом `dropdown-divider`. Класс `dropdown-divider` добавляется после каждого пункта меню, кроме последнего.
+
+Таким образом, использование класса `dropdown-divider` позволяет создавать более понятное и удобочитаемое вложенное меню в Bootstrap.
