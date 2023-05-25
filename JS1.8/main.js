@@ -1,5 +1,5 @@
 // Решение задачи без использования функций высшего порядка
-const arr1 = [3, 6, 9];
+const arr1 = [2, 4, 5];
 const arr2 = [];
 for(let i = 0; i < arr1.length; i++) {
   arr2.push(arr1[i] * 2);
