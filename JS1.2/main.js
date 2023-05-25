@@ -36,7 +36,7 @@ function factorial(n) {
     return n * factorial(n - 1);
 }
 
-console.log(factorial(4));
+console.log(factorial(10));
 
 // 5.Напишите программу, которая проверяет вашу фамилию на палиндром.
 
@@ -50,7 +50,7 @@ function isPalindrome(str) {
     return true;
 }
 
-console.log(isPalindrome("racecar"));
+console.log(isPalindrome("popov"));
 
 // 6.Выведите все простые числа от 1 до вашего порядкового номера в журнале.
 
@@ -66,7 +66,7 @@ function isPrime(n) {
     return true;
 }
 
-for (let i = 1; i <= 4; i++) {
+for (let i = 1; i <= 10; i++) {
     if (isPrime(i)) {
         console.log(i);
     }
