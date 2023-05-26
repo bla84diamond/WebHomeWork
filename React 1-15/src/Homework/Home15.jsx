@@ -17,7 +17,7 @@ class Home15 extends Component {
     return (
       <div>
         <button onClick={this.handleClick}>Click me</button>
-        <h1 style={{ color: isClicked ? "red" : "black" }}>Hello, world!</h1>
+        <h1 style={{ color: isClicked ? "green" : "pink" }}>Привет, мир!</h1>
       </div>
     );
   }

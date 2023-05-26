@@ -5,7 +5,7 @@ import List from "./For7Task/List";
 import Search from "./For7Task/Search";
 
 function Home7() {
-  const items = ["Apple", "Banana", "Cherry", "Durian"];
+  const items = ["Яблоко", "Банан", "Вишня", "Дуриан"];
 
   return (
     <div>

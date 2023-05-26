@@ -14,7 +14,7 @@ function Home4() {
 
   return (
     <div>
-      <h1>Timer: {formattedTime}</h1>
+      <h1>Таймер: {formattedTime}</h1>
     </div>
   );
 }
