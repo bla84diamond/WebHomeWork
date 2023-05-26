@@ -82,7 +82,7 @@ const sum = arr.reduce(function(accumulator, currentValue) {
 
 const grades = [5, 4, 3, 5, 4, 5, 3, 4, 5, 3];
 const sum1 = grades.reduce((accumulator, currentValue) => accumulator + currentValue);
-const average = sum / grades.length;
+const average = sum1 / grades.length;
 console.log(`Средний балл: ${average}`);
 
 // 5. Используя синтаксис, создайте собственную функцию высшего порядка, которая из заданного массива возвращает массив, состоящий из нулей (для тех элементов длинна которых меньше либо равна 3) и единиц (в другом случае).
