@@ -32,7 +32,7 @@ class Button extends Component {
     console.log('render');
     return (
       <button onClick={this.handleClick}>
-        Click me ({this.state.count})
+        Жми меня ({this.state.count})
       </button>
     );
   }

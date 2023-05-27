@@ -14,7 +14,7 @@ const Search = ({ onSearch }) => {
   return (
     <div>
       <input type="text" value={searchValue} onChange={handleInputChange} />
-      <button onClick={handleSearchClick}>Поиск</button>
+      <button onClick={handleSearchClick}>Искать</button>
     </div>
   );
 };

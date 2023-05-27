@@ -16,7 +16,7 @@ const TaskInput = ({ onAddTask, selectedCategory }) => {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-      <button>Добавить задачу</button>
+      <button>Записать задачу</button>
     </form>
   );
 };

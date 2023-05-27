@@ -4,7 +4,7 @@
     background-color: rgb(212, 200, 200);
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 2px solid gold;
+    border: 2px solid rgb(0, 21, 255);
 }
 
 .name {
@@ -16,7 +16,7 @@
     width: 100px;
     height: 100px;;
     border-radius: 50%;
-    box-shadow: 0 0 15 rgb(212, 200, 200);
+    box-shadow: 0 0 15 rgb(190, 208, 232);
 }
 
 .price {
